@@ -12,7 +12,7 @@ fn main() -> Result<()> {
     let qtype = packet::query::QueryType::A;
 
     // Using googles public DNS server
-    let server = ("8.8.8.8", 53);
+    let server = ("1.1.1.1", 53);
 
     // Bind a UDP socket to an arbitrary port
     let socket = UdpSocket::bind(("0.0.0.0", 43210))?;
